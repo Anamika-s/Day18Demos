@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script>
+  function CheckForEven(){
+    var no = parseInt(document.getElementById("txtNo").value);
+    if(no % 2==0)
+    {
+    console.log("Its even");
+    document.getElementById("div1").innerHTML = no + " is even";
+    }
+    else
+    {
+      console.log("Its odd");
+    document.getElementById("div1").innerHTML = no + " is odd";
+    }
+  }
+</script>
+</head>
+<body>
+  <div class="form-group">
+    <label for="txtNo"> Enter No </label>
+    <input type="number" name="txtNo" id="txtNo"  class="form-control"> 
+  </div>
+   <div id="div1"></div>
+  <button onclick="CheckForEven();"> Check </button>
+</body>
+</html
+
