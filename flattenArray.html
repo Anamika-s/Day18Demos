@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script>
+const flatten = (x) => {
+  var temp = [].concat(...x);
+  console.log(temp);
+  var temp= [].concat(...temp);
+console.log(temp);
+  // Write your code here
+};
+function get()
+{
+  var x = [1, [2, 3], [[4], [5]]];
+  flatten(x);
+}
+</script>
+</head>
+<body>
+<button onclick="get()"> click </button>"
+</body>
+</html>
+<!-- /* For example,
+INPUT - flatten([1, [2, 3], [[4], [5]])
+OUTPUT - [ 1, 2, 3, 4, 5 ] -->

@@ -16,7 +16,8 @@
 </head>
 <body>
   <div class="container">
-  <form>
+    <button onclick="call()";> Average </button>
+    <form>
     <div class="form-group">
       <h1> Add Numbers </h1>
     <label for="txtNo1"> Enter No 1</label>
@@ -39,10 +40,16 @@
     <button type="button" onClick="Divide()"; class="btn btn-primary"> Divide </button>
     <button type="button" onClick="Multiply()"; class="btn btn-primary"> Multiply </button>
   <!-- <button type="button" onClick=> Close </button> -->
-  </div>
+<div id="d2"></div>  
+</div>
   </form>
 </div>
 <script>
+  function call()
+  {
+    var x = avg(1,2,3,4,6,7);
+    document.getElementById("d2").innerHTML = x;
+  }
   function Add()
   {
  var x = parseInt(document.getElementById("txtNo1").value);
@@ -75,7 +82,13 @@
 
  
   }
-  
+  function avg(...args) {
+  var sum = 0;
+  for (let value of args) {
+    sum += value;
+  }
+  return sum / args.length;
+}
 </script>
 </body>
 </html

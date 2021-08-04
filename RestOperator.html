@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<script>
+  // function add( x,  y)   
+  // {
+  //   return x+y;
+  // }
+  function add(...num)   // Rest Operator , How many para ypu will pass, 
+      // they will get store in an array here
+  {
+   var sum =0;
+   for(var i in num)
+   {
+     sum += parseInt(num[i]);
+   }
+  return sum;
+  }
+   
+  function call()
+  {
+    var result =add(10,20,90,89);
+    console.log("Sum is " + result);
+  result = add(1,2);
+  console.log("Sum is " + result);
+  }
+  </script>
+</head> 
+<body>
+<button type="button" onclick="call()";> Add </button>
+</body>
+</html> 
